@@ -2,7 +2,7 @@
 
 resource "aws_instance" "test-svc" {
   ami           = var.VM01_AMI_ID
-  instance_type = "t2.micro"
+  instance_type = "t3.xlarge"
 
   root_block_device {
      volume_size = 20
