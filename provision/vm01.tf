@@ -18,7 +18,7 @@ resource "aws_instance" "test-svc" {
   key_name = "deployer-key"
 
   tags = {
-      Name      = "Harbor Test Env"
+      Name      = "SMESH Test Env"
       env       = "test"
   }
 
