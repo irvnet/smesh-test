@@ -1,0 +1,9 @@
+apiVersion: getambassador.io/v2
+kind: ConsulResolver
+metadata:
+  name: consul-dc1
+  namespace: ambassador
+spec:
+  address: consul-server.consul.svc.cluster.local:8500
+  datacenter: dc1
+
