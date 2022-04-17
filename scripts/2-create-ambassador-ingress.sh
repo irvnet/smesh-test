@@ -7,4 +7,5 @@ kubectl apply -n ambassador -f https://github.com/datawire/ambassador-operator/r
 kubectl wait --timeout=180s -n ambassador --for=condition=deployed ambassadorinstallations/ambassador
 
 ## ingress route for emojivoto
+kubectl create namespace emojivoto
 kubectl apply -f ../config/emojivoto-ingress.yaml
