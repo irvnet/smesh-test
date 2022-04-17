@@ -13,5 +13,8 @@ openssl req -x509 -newkey rsa:4096 -keyout ${HOME}/work/key.pem -out ${HOME}/wor
 ## add certs to a k8s secret
 kubectl create secret -n ambassador tls tls-cert --cert=${HOME}/work/cert.pem --key=${HOME}/work/key.pem
 
+## add tls cert to wildcard host
+kubectl apply -f ../config/wildcard-host.yaml
+
 
 
