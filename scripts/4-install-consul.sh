@@ -1,6 +1,6 @@
  #!/bin/bash
 
-add hashicorp https://helm.releases.hashicorp.com
+helm repo add hashicorp https://helm.releases.hashicorp.com
 
 kubectl create ns consul
 
